@@ -46,8 +46,9 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\ControllerScripts\TileFunctions.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerMovementScript.cs" />
      <Compile Include="Assets\Scripts\Tiles\TileHighlightScript.cs" />
+     <Compile Include="Assets\Scripts\Tiles\TileState.cs" />
      <None Include="Assets\Scripts\Shader\AlphaSelfIllum.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>

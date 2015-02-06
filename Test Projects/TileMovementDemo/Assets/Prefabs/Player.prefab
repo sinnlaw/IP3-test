@@ -13,8 +13,8 @@ GameObject:
   - 23: {fileID: 2300000}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: Tile
-  m_TagString: Tile
+  m_Name: Player
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,8 +26,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: .25, z: 2}
+  m_LocalPosition: {x: -6, y: 1.20000005, z: 4}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -43,7 +43,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 92aeaf2b8f7bfca488e489867d107123, type: 2}
+  - {fileID: 2100000, guid: a6e6588607d3d9a488173a8e3dc57085, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -78,13 +78,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b204746565eaa44fbc85dbb1bb65391, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b86756bb79eb23478951dda290a7f94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedTexture: {fileID: 2800000, guid: bcc70844f142ddf4c8da5f5043ddafed, type: 3}
-  highlightedTexture: {fileID: 2800000, guid: e66bc12b27404114892c2f8476e44479, type: 3}
-  defaultTexture: {fileID: 2800000, guid: 80b0e2c8bb9a76c4683d1a2dbf304d63, type: 3}
-  containsPlayer: 0
+  clickedTile: {fileID: 0}
+  occupiedTile: {fileID: 0}
+  moveSpeed: 3
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
